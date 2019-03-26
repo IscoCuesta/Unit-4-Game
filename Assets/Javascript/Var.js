@@ -1,7 +1,7 @@
 var Pokemons = {
     Cubone: {
         name: "Cubone",
-        image: "./assets/images/Cubone.png",
+        image: "Assets/images/Cubone.png",
         hp: 100,
         strength: 10,
         type: "earth",
@@ -9,7 +9,7 @@ var Pokemons = {
     },
     Squirtle: {
         name: "Squirtle",
-        image: "./assets/images/Squirtle.png",
+        image: "Assets/images/Squirtle.png",
         hp: 80,
         strength: 12,
         type: "water",
@@ -17,18 +17,90 @@ var Pokemons = {
     },
     Charizard: {
         name: "Charizard",
-        image: "./assets/images/Charizard.png",
-        hp: 120,
+        image: "Assets/images/Charizard.png",
+        hp: 70,
         strength: 15,
         type: "fire",
         active: false,
     },
     Bulbasaur: {
         name: "Bulbasaur",
-        image: "./assets/images/Bulbasaur.png",
+        image: "Assets/images/Bulbasaur.png",
         hp: 108,
         strength: 10,
         type: "plant",
+        active: false,
+    },
+    Beedrill: {
+        name: "Beedrill",
+        image: "Assets/images/Beedrill.png",
+        hp: 100,
+        strength: 12,
+        type: "plant",
+        active: false,
+    },
+    Sandslash: {
+        name: "Sandslash",
+        image: "Assets/images/Sandslash.png",
+        hp: 110,
+        strength: 9,
+        type: "earth",
+        active: false,
+    },
+    Vulpix: {
+        name: "Vulpix",
+        image: "Assets/images/Vulpix.png",
+        hp: 90,
+        strength: 15,
+        type: "fire",
+        active: false,
+    },
+    Oddish: {
+        name: "Oddish",
+        image: "Assets/images/Oddish.png",
+        hp: 115,
+        strength: 7,
+        type: "plant",
+        active: false,
+    },
+    Psyduck: {
+        name: "Psyduck",
+        image: "Assets/images/Psyduck.png",
+        hp: 70,
+        strength: 18,
+        type: "water",
+        active: false,
+    },
+    Growlithe: {
+        name: "Growlithe",
+        image: "Assets/images/Growlithe.png",
+        hp: 75,
+        strength: 12,
+        type: "fire",
+        active: false,
+    },
+    Tentacool: {
+        name: "Tentacool",
+        image: "Assets/images/Tentacool.png",
+        hp: 60,
+        strength: 20,
+        type: "water",
+        active: false,
+    },
+    Golem: {
+        name: "Golem",
+        image: "Assets/images/Golem.png",
+        hp: 85,
+        strength: 16,
+        type: "earth",
+        active: false,
+    },
+    Gyarados: {
+        name: "Gyarados",
+        image: "Assets/images/Gyarados.png",
+        hp: 60,
+        strength: 22,
+        type: "water",
         active: false,
     },
 };
@@ -45,7 +117,8 @@ var CompPokemons = {
     },
 };
 
-var APokemons = ["Cubone","Squirtle","Charizard","Bulbasaur"];
+var APokemons = ["Cubone","Squirtle","Charizard","Bulbasaur", "Beedrill", "Gyarados",
+"Sandslash", "Vulpix", "Oddish", "Psyduck", "Growlithe", "Tentacool", "Golem",  ];
 var RndPoke = "";
 var SelectPoke = [];
 var isdiferent = false;
@@ -83,7 +156,7 @@ function compare (Atack, Deffense){
         }
         else if(Deffense === "water"){
             multiplier = 0.6;
-            TextMult = "The attack had no effect!"
+            TextMult = "The attack had almost no effect!"
         }
         else {
             multiplier = 1;
@@ -97,7 +170,7 @@ function compare (Atack, Deffense){
         }
         else if(Deffense === "plant"){
             multiplier = 0.3;
-            TextMult = "The attack had no effect!"
+            TextMult = "The attack had almost no effect!"
         }
         else {
             multiplier = 1;
@@ -111,7 +184,7 @@ function compare (Atack, Deffense){
         }
         else if(Deffense === "water" || Deffense === "tierra"){
             multiplier = 0.7;
-            TextMult = "The attack had no effect!"
+            TextMult = "The attack had almost no effect!"
         }
         else {
             multiplier = 1;
@@ -125,7 +198,7 @@ function compare (Atack, Deffense){
         }
         else if(Deffense === "fire" || Deffense === "earth"){
             multiplier = 0.5;
-            TextMult = "The attack had no effect!"
+            TextMult = "The attack had almost no effect!"
         }
         else {
             multiplier = 1;

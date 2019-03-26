@@ -16,32 +16,42 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-3">Pokemon JQuery Version</h1>
+                <img src="Assets/images/Lopo.png" class="card-img-top">
                 <hr class="my-2">
-                <p class="lead">Gota catch em all!</p>
+            <p class="lead">Choose 2 Pokemons!</p>
 
             </div> 
         </div>
 
-        <div class="row display" id="Select">
+        <div class="row display card-deck" id="Select">
         </div>
         <div class="row SecondPart">
             <div class="col-4" id="UserPoke">
-                <div class="ActivePoke0 Options col-12 card text-center" Data-poke="0"></div>
-                <div class="ActivePoke0 Options col-12 text-center" Data-poke="0" id="Poketext0"></div>
-                <div class="ActivePoke1 Options col-12 card text-center" Data-poke="1"></div>
-                <div class="ActivePoke1 Options col-12 text-center" Data-poke="1" id="Poketext1"></div>
+                <div class="ActivePoke0 Options col-12 card text-center" Data-poke="0">
+                    <h5 class="Options col-12 card-body text-center card-footer" id="Poketext0"></h5>
+                </div>
+                <div class="ActivePoke1 Options col-12 card text-center" Data-poke="1">
+                    <h5 class="Options col-12 card-body text-center card-footer" id="Poketext1"></h5>
+                </div>
             </div>
                 <div class="col-4">
                 <img src="Assets/images/trainer.png" class="card-img-top">
-                <a id="Fight-btn" class="btn btn-primary text-center col-12" role="button">Fight</a>
-                <h2 id="Text" class="text-center col-12"> Pick your Pokemon and which one you attack! <br> Then Click on the putton Atack!</h2>
+                <a id="Fight-btn" class="btn btn-primary text-center col-12" role="button">Fight!</a>
+                <div class="card text-center col-12">
+                    <img src="Assets/images/text.png" class="card-img" alt="text display">
+                    <div class="card-img-overlay">
+                        <p id="Text" class="card-text"> Pick your Pokemon and which one you attack! <br> Then Click on the button Attack!</h2>
+                        <p id="Text2" class="card-text"></p>
+                    </div>
+                </div>
             </div>
             <div class="col-4" id="CompPoke">
-                <div class="CompPoke0 Options col-12 card text-center" Data-poke="0"></div>
-                <div class="CompPoke0 Options col-12 text-center" Data-poke="0" id="PoketextComp0"></div>
-                <div class="CompPoke1 Options col-12 card text-center" Data-poke="1"></div>
-                <div class="CompPoke1 Options col-12 text-center" Data-poke="1" id="PoketextComp1"></div>
+                <div class="CompPoke0 Options col-12 card text-center" Data-poke="0">
+                    <h5 class="Options col-12 card-body text-center card-footer" id="PoketextComp0"></h5>
+                </div>
+                <div class="CompPoke1 Options col-12 card text-center" Data-poke="1">
+                    <h5 class="Options col-12 card-body text-center card-footer" id="PoketextComp1"></h5>
+                </div>
             </div>
         </div>
 
